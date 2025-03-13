@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="SubmitOrderSuite" thread-count="5">
+
+	<listeners>
+		<listener class-name="com.testcomponents.Listeners_ThreadSafe" />
+	</listeners>
+
+	<test name="SubmitOrderTest">
+		<classes>
+			<class name="com.test.SubmitOrderTest_Browser" />
+
+		</classes>
+	</test> <!-- Test -->
+
+	<test name="ErrorValidationTest">
+		<classes>
+
+			<class name="com.test.Error_Validation_Test" />
+			
+		</classes>
+	</test> <!-- Test -->
+
+</suite> <!-- SubmitOrderSuite -->
