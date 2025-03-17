@@ -85,9 +85,6 @@ public class BaseTest {
 
 		TakesScreenshot ts = (TakesScreenshot) driver;
 		File source = ts.getScreenshotAs(OutputType.FILE);
-//		File fis = new File(System.getProperty("user.dir") + "//reports//" + testcasename + ".png");
-//		FileUtils.copyDirectory(source, fis);
-//		return System.getProperty("user.dir") + "//reports//" + testcasename + ".png";
 		File fis = new File(System.getProperty("user.dir") + "//Screenshot//" + testcasename + ".png");
 		FileUtils.copyFile(source, fis);
 		return System.getProperty("user.dir") + "//Screenshot//" + testcasename + ".png";
