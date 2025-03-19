@@ -3,13 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.cucumber_runner.SubmitOrder_Runner">
+      <class name="com.test.Error_Validation_Test">
         <methods>
-          <include name="setUpClass"/>
-          <include name="runScenario" invocation-numbers="0"/>
-          <include name="tearDownClass"/>
+          <include name="login_error_Validation"/>
+          <include name="teardown"/>
+          <include name="launchApplication"/>
         </methods>
-      </class> <!-- com.cucumber_runner.SubmitOrder_Runner -->
+      </class> <!-- com.test.Error_Validation_Test -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

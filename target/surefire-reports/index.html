@@ -25,7 +25,7 @@
       <span class="top-banner-title-font">Test results</span>
       <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
       <br/>
-      <span class="top-banner-font-1">1 suite, 2 failed tests</span>
+      <span class="top-banner-font-1">1 suite, 1 failed test</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -50,7 +50,7 @@
               <ul>
                 <li>
                   <a href="#" panel-name="test-xml-SubmitOrderSuite" class="navigator-link ">
-                    <span>F:\Eclipse-workspace-RestAssured-April2024\TestNG-Framework-2025\ErrorValidation_Listeners.xml</span>
+                    <span>F:\Eclipse-workspace-RestAssured-April2024\TestNG-Framework-2025\ErrorValidation.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -60,7 +60,7 @@
                 </li>
                 <li>
                   <a href="#" panel-name="group-SubmitOrderSuite" class="navigator-link ">
-                    <span>0 groups</span>
+                    <span>1 group</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -92,7 +92,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">3 methods, 2 failed,   1 passed</span>
+                    <span class="method-stats">3 methods, 1 failed,   2 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title failed">Failed methods</span>
@@ -104,11 +104,6 @@
                       <span>
                         <img src="failed.png" width="3%"/>
                         <a href="#" panel-name="suite-SubmitOrderSuite" title="com.test.Error_Validation_Test" class="method navigator-link" hash-for-method="login_error_Validation">login_error_Validation</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="failed.png" width="3%"/>
-                        <a href="#" panel-name="suite-SubmitOrderSuite" title="com.test.SubmitOrderTest_Browser" class="method navigator-link" hash-for-method="submitOrderTest">submitOrderTest</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content failed suite-SubmitOrderSuite -->
@@ -123,6 +118,11 @@
                       <span>
                         <img src="passed.png" width="3%"/>
                         <a href="#" panel-name="suite-SubmitOrderSuite" title="com.test.Error_Validation_Test" class="method navigator-link" hash-for-method="product_error_Validation">product_error_Validation</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-SubmitOrderSuite" title="com.test.SubmitOrderTest_Browser" class="method navigator-link" hash-for-method="submitOrderTest">submitOrderTest</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-SubmitOrderSuite -->
@@ -151,47 +151,11 @@
                   <div class="stack-trace">java.lang.AssertionError: expected [Incorrect or password.] but found [Incorrect email or password.]
 	at com.test.Error_Validation_Test.login_error_Validation(Error_Validation_Test.java:26)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-... Removed 35 stack frames
-</div> <!-- stack-trace -->
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-SubmitOrderSuite-class-failed -->
-          <div class="suite-SubmitOrderSuite-class-failed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="failed.png"/>
-              <span class="class-name">com.test.SubmitOrderTest_Browser</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="submitOrderTest">
-                  </a> <!-- submitOrderTest -->
-                  <span class="method-name">submitOrderTest</span>
-                  <div class="stack-trace">org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element is not clickable at point (943, 653)
-  (Session info: chrome=134.0.6998.88)
-Build info: version: &apos;4.27.0&apos;, revision: &apos;d6e718d134&apos;
-System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.6&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [dbbfffedef254aee6c2044290b5bcdf8, clickElement {id=f.37585FC9E71DCCE7AA65FA548C80AE1F.d.CF0CB2D42382BF7749BDFDFB667CD89D.e.129}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 134.0.6998.88, chrome: {chromedriverVersion: 134.0.6998.88 (7e3d5c978c6d..., userDataDir: C:\WINDOWS\SystemTemp\scope...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:50116}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:50116/devtoo..., se:cdpVersion: 134.0.6998.88, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on windows (dbbfffedef254aee6c2044290b5bcdf8)] -&gt; css selector: .action__submit]
-Session ID: dbbfffedef254aee6c2044290b5bcdf8
-	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
-	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
-	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:76)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
-	at jdk.proxy2/jdk.proxy2.$Proxy11.click(Unknown Source)
-	at com.pageobjects.CheckoutPage.submitorder(CheckoutPage.java:54)
-	at com.test.SubmitOrderTest_Browser.submitOrderTest(SubmitOrderTest_Browser.java:45)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-... Removed 34 stack frames
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+... Removed 21 stack frames
 </div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
@@ -212,25 +176,42 @@ Session ID: dbbfffedef254aee6c2044290b5bcdf8
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
           </div> <!-- suite-SubmitOrderSuite-class-passed -->
+          <div class="suite-SubmitOrderSuite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.test.SubmitOrderTest_Browser</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="submitOrderTest">
+                  </a> <!-- submitOrderTest -->
+                  <span class="method-name">submitOrderTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-SubmitOrderSuite-class-passed -->
         </div> <!-- panel SubmitOrderSuite -->
         <div panel-name="test-xml-SubmitOrderSuite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">F:\Eclipse-workspace-RestAssured-April2024\TestNG-Framework-2025\ErrorValidation_Listeners.xml</span>
+            <span class="header-content">F:\Eclipse-workspace-RestAssured-April2024\TestNG-Framework-2025\ErrorValidation.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
 &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
 &lt;!DOCTYPE suite SYSTEM &quot;https://testng.org/testng-1.0.dtd&quot;&gt;
-&lt;suite name=&quot;SubmitOrderSuite&quot; guice-stage=&quot;DEVELOPMENT&quot; verbose=&quot;0&quot;&gt;
-  &lt;listeners&gt;
-    &lt;listener class-name=&quot;com.testcomponents.Listeners_ThreadSafe&quot;/&gt;
-  &lt;/listeners&gt;
-  &lt;test thread-count=&quot;5&quot; name=&quot;SubmitOrderTest&quot; verbose=&quot;0&quot;&gt;
+&lt;suite parallel=&quot;tests&quot; name=&quot;SubmitOrderSuite&quot; guice-stage=&quot;DEVELOPMENT&quot; verbose=&quot;0&quot;&gt;
+  &lt;test thread-count=&quot;5&quot; parallel=&quot;tests&quot; name=&quot;SubmitOrderTest&quot; verbose=&quot;0&quot;&gt;
     &lt;classes&gt;
       &lt;class name=&quot;com.test.SubmitOrderTest_Browser&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- SubmitOrderTest --&gt;
-  &lt;test thread-count=&quot;5&quot; name=&quot;ErrorValidationTest&quot; verbose=&quot;0&quot;&gt;
+  &lt;test thread-count=&quot;5&quot; parallel=&quot;tests&quot; name=&quot;ErrorValidationTest&quot; verbose=&quot;0&quot;&gt;
+    &lt;groups&gt;
+      &lt;run&gt;
+        &lt;include name=&quot;ErrorHandling&quot;/&gt;
+      &lt;/run&gt;
+    &lt;/groups&gt;
     &lt;classes&gt;
       &lt;class name=&quot;com.test.Error_Validation_Test&quot;/&gt;
     &lt;/classes&gt;
@@ -259,6 +240,18 @@ Session ID: dbbfffedef254aee6c2044290b5bcdf8
             <span class="header-content">Groups for SubmitOrderSuite</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
+            <div class="test-group">
+              <span class="test-group-name">ErrorHandling</span>
+              <br/>
+              <div class="method-in-group">
+                <span class="method-in-group-name">login_error_Validation</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">product_error_Validation</span>
+                <br/>
+              </div> <!-- method-in-group -->
+            </div> <!-- test-group -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
         <div panel-name="times-SubmitOrderSuite" class="panel">
@@ -279,20 +272,20 @@ data.addRows(3);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'submitOrderTest')
 data.setCell(0, 2, 'com.test.SubmitOrderTest_Browser')
-data.setCell(0, 3, 8988);
+data.setCell(0, 3, 8037);
 data.setCell(1, 0, 1)
 data.setCell(1, 1, 'product_error_Validation')
 data.setCell(1, 2, 'com.test.Error_Validation_Test')
-data.setCell(1, 3, 7972);
+data.setCell(1, 3, 6983);
 data.setCell(2, 0, 2)
 data.setCell(2, 1, 'login_error_Validation')
 data.setCell(2, 2, 'com.test.Error_Validation_Test')
-data.setCell(2, 3, 1237);
+data.setCell(2, 3, 1578);
 window.suiteTableData['SubmitOrderSuite']= { tableData: data, tableDiv: 'times-div-SubmitOrderSuite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 18 seconds</span>
+              <span class="suite-total-time">Total running time: 1 minutes</span>
               <div id="times-div-SubmitOrderSuite">
               </div> <!-- times-div-SubmitOrderSuite -->
             </div> <!-- times-div -->
@@ -323,44 +316,48 @@ return data;
                 <span class="method-name">launchApplication</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-method before -->
-              <div class="test-method">
-                <img src="failed.png">
-                </img>
-                <span class="method-name">submitOrderTest</span>
-                <span class="method-start">17089 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-method after">
-                <span class="method-name">teardown</span>
-                <span class="method-start">26327 ms</span>
-              </div> <!-- configuration-method after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">com.test.Error_Validation_Test</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
                 <span class="method-name">launchApplication</span>
-                <span class="method-start">27128 ms</span>
+                <span class="method-start">0 ms</span>
               </div> <!-- configuration-method before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.test.SubmitOrderTest_Browser</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">submitOrderTest</span>
+                <span class="method-start">12812 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">teardown</span>
+                <span class="method-start">20849 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.test.Error_Validation_Test</div> <!-- chronological-class-name -->
               <div class="test-method">
                 <img src="failed.png">
                 </img>
                 <span class="method-name">login_error_Validation</span>
-                <span class="method-start">32642 ms</span>
+                <span class="method-start">30300 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">teardown</span>
-                <span class="method-start">34120 ms</span>
+                <span class="method-start">31878 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">launchApplication</span>
-                <span class="method-start">34253 ms</span>
+                <span class="method-start">32798 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">product_error_Validation</span>
-                <span class="method-start">46219 ms</span>
+                <span class="method-start">60903 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">teardown</span>
-                <span class="method-start">54192 ms</span>
+                <span class="method-start">67886 ms</span>
               </div> <!-- configuration-method after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

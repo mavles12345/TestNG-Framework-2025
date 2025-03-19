@@ -58,9 +58,11 @@ public class BaseTest {
 		} else if (browser.equals("firefox")) {
 
 			driver = new FirefoxDriver();
+			driver.manage().window().setSize(new Dimension(1440, 900));
 		} else {
 
 			driver = new EdgeDriver();
+			driver.manage().window().setSize(new Dimension(1440, 900));
 		}
 
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));

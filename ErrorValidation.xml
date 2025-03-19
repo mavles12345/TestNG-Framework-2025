@@ -1,11 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 <suite name="SubmitOrderSuite" parallel="tests">
-	<groups>
-		<run>
-			<include name="ErrorHandling" />
-		</run>
-	</groups>
 
 
 	<test thread-count="5" name="SubmitOrderTest">
@@ -16,8 +11,14 @@
 	</test> <!-- Test -->
 
 	<test thread-count="5" name="ErrorValidationTest">
-		<classes>
 
+		<groups>
+			<run>
+				<include name="ErrorHandling" />
+			</run>
+		</groups>
+
+		<classes>
 			<class name="com.test.Error_Validation_Test" />
 		</classes>
 	</test> <!-- Test -->

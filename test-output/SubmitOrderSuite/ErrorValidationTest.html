@@ -57,11 +57,11 @@ function toggleAllBoxes() {
 <tr>
 <td>Tests passed/Failed/Skipped:</td><td>1/1/0</td>
 </tr><tr>
-<td>Started on:</td><td>Fri Mar 07 00:12:17 IST 2025</td>
+<td>Started on:</td><td>Wed Mar 19 06:14:44 IST 2025</td>
 </tr>
-<tr><td>Total time:</td><td>20 seconds (20904 ms)</td>
+<tr><td>Total time:</td><td>44 seconds (44514 ms)</td>
 </tr><tr>
-<td>Included groups:</td><td></td>
+<td>Included groups:</td><td>ErrorHandling </td>
 </tr><tr>
 <td>Excluded groups:</td><td></td>
 </tr>
@@ -80,8 +80,12 @@ function toggleAllBoxes() {
 <td><div><pre>java.lang.AssertionError: expected [Incorrect or password.] but found [Incorrect email or password.]
 	at com.test.Error_Validation_Test.login_error_Validation(Error_Validation_Test.java:26)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-... Removed 33 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace135003590", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace135003590'><pre>java.lang.AssertionError: expected [Incorrect or password.] but found [Incorrect email or password.]
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
+	at java.base/java.lang.Thread.run(Thread.java:832)
+... Removed 23 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1110723387", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1110723387'><pre>java.lang.AssertionError: expected [Incorrect or password.] but found [Incorrect email or password.]
 	at org.testng.Assert.fail(Assert.java:110)
 	at org.testng.Assert.failNotEquals(Assert.java:1577)
 	at org.testng.Assert.assertEqualsImpl(Assert.java:149)
@@ -105,21 +109,15 @@ function toggleAllBoxes() {
 	at org.testng.TestRunner.privateRun(TestRunner.java:829)
 	at org.testng.TestRunner.run(TestRunner.java:602)
 	at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:431)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:391)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:330)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
-	at org.testng.TestNG.runSuites(TestNG.java:1099)
-	at org.testng.TestNG.run(TestNG.java:1067)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:475)
+	at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:58)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
+	at java.base/java.lang.Thread.run(Thread.java:832)
 </pre></div></td>
 <td>1</td>
-<td>com.test.Error_Validation_Test@4748a0f9</td></tr>
+<td>com.test.Error_Validation_Test@5524cca1</td></tr>
 </table><p>
 <table width='100%' border='1' class='invocation-passed'>
 <tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
@@ -133,7 +131,7 @@ function toggleAllBoxes() {
 <td title='com.test.Error_Validation_Test.product_error_Validation()'><b>product_error_Validation</b><br>Test class: com.test.Error_Validation_Test</td>
 <td></td>
 <td>7</td>
-<td>com.test.Error_Validation_Test@4748a0f9</td></tr>
+<td>com.test.Error_Validation_Test@5524cca1</td></tr>
 </table><p>
 </body>
 </html>

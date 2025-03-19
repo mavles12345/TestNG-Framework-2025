@@ -1,106 +1,37 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="3" passed="1" failed="2" skipped="0">
+<testng-results ignored="0" total="3" passed="2" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-03-11T13:28:50 IST" name="SubmitOrderSuite" finished-at="2025-03-11T13:29:44 IST" duration-ms="54334">
+  <suite started-at="2025-03-19T06:28:29 IST" name="SubmitOrderSuite" finished-at="2025-03-19T06:29:38 IST" duration-ms="68957">
     <groups>
+      <group name="ErrorHandling">
+        <method signature="Error_Validation_Test.login_error_Validation()[pri:0, instance:com.test.Error_Validation_Test@2a4fb17b]" name="login_error_Validation" class="com.test.Error_Validation_Test"/>
+        <method signature="Error_Validation_Test.product_error_Validation()[pri:0, instance:com.test.Error_Validation_Test@2a4fb17b]" name="product_error_Validation" class="com.test.Error_Validation_Test"/>
+      </group> <!-- ErrorHandling -->
     </groups>
-    <test started-at="2025-03-11T13:28:50 IST" name="SubmitOrderTest" finished-at="2025-03-11T13:29:16 IST" duration-ms="26495">
+    <test started-at="2025-03-19T06:28:29 IST" name="SubmitOrderTest" finished-at="2025-03-19T06:28:51 IST" duration-ms="21896">
       <class name="com.test.SubmitOrderTest_Browser">
-        <test-method is-config="true" signature="launchApplication()[pri:0, instance:com.test.SubmitOrderTest_Browser@97e93f1]" started-at="2025-03-11T13:28:50 IST" name="launchApplication" finished-at="2025-03-11T13:29:07 IST" duration-ms="17089" status="PASS">
+        <test-method is-config="true" signature="launchApplication()[pri:0, instance:com.test.SubmitOrderTest_Browser@359f7cdf]" started-at="2025-03-19T06:28:29 IST" name="launchApplication" finished-at="2025-03-19T06:28:42 IST" duration-ms="12812" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- launchApplication -->
-        <test-method signature="submitOrderTest()[pri:0, instance:com.test.SubmitOrderTest_Browser@97e93f1]" started-at="2025-03-11T13:29:07 IST" name="submitOrderTest" finished-at="2025-03-11T13:29:16 IST" duration-ms="8988" status="FAIL">
-          <exception class="org.openqa.selenium.ElementClickInterceptedException">
-            <message>
-              <![CDATA[element click intercepted: Element is not clickable at point (943, 653)
-  (Session info: chrome=134.0.6998.88)
-Build info: version: '4.27.0', revision: 'd6e718d134'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.6'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [dbbfffedef254aee6c2044290b5bcdf8, clickElement {id=f.37585FC9E71DCCE7AA65FA548C80AE1F.d.CF0CB2D42382BF7749BDFDFB667CD89D.e.129}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 134.0.6998.88, chrome: {chromedriverVersion: 134.0.6998.88 (7e3d5c978c6d..., userDataDir: C:\WINDOWS\SystemTemp\scope...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:50116}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:50116/devtoo..., se:cdpVersion: 134.0.6998.88, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on windows (dbbfffedef254aee6c2044290b5bcdf8)] -> css selector: .action__submit]
-Session ID: dbbfffedef254aee6c2044290b5bcdf8]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element is not clickable at point (943, 653)
-  (Session info: chrome=134.0.6998.88)
-Build info: version: '4.27.0', revision: 'd6e718d134'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.6'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [dbbfffedef254aee6c2044290b5bcdf8, clickElement {id=f.37585FC9E71DCCE7AA65FA548C80AE1F.d.CF0CB2D42382BF7749BDFDFB667CD89D.e.129}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 134.0.6998.88, chrome: {chromedriverVersion: 134.0.6998.88 (7e3d5c978c6d..., userDataDir: C:\WINDOWS\SystemTemp\scope...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:50116}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:50116/devtoo..., se:cdpVersion: 134.0.6998.88, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on windows (dbbfffedef254aee6c2044290b5bcdf8)] -> css selector: .action__submit]
-Session ID: dbbfffedef254aee6c2044290b5bcdf8
-at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
-at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
-at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
-at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
-at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
-at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:76)
-at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
-at jdk.proxy2/jdk.proxy2.$Proxy11.click(Unknown Source)
-at com.pageobjects.CheckoutPage.submitorder(CheckoutPage.java:54)
-at com.test.SubmitOrderTest_Browser.submitOrderTest(SubmitOrderTest_Browser.java:45)
-at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-at org.testng.TestRunner.privateRun(TestRunner.java:829)
-at org.testng.TestRunner.run(TestRunner.java:602)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:431)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:391)
-at org.testng.SuiteRunner.run(SuiteRunner.java:330)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
-at org.testng.TestNG.runSuites(TestNG.java:1099)
-at org.testng.TestNG.run(TestNG.java:1067)
-at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:308)
-at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:71)
-at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:113)
-at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
-at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
-at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
-at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.ElementClickInterceptedException -->
+        <test-method signature="submitOrderTest()[pri:0, instance:com.test.SubmitOrderTest_Browser@359f7cdf]" started-at="2025-03-19T06:28:42 IST" name="submitOrderTest" finished-at="2025-03-19T06:28:50 IST" duration-ms="8037" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- submitOrderTest -->
-        <test-method is-config="true" signature="teardown()[pri:0, instance:com.test.SubmitOrderTest_Browser@97e93f1]" started-at="2025-03-11T13:29:16 IST" name="teardown" finished-at="2025-03-11T13:29:16 IST" duration-ms="134" status="PASS">
+        <test-method is-config="true" signature="teardown()[pri:0, instance:com.test.SubmitOrderTest_Browser@359f7cdf]" started-at="2025-03-19T06:28:50 IST" name="teardown" finished-at="2025-03-19T06:28:51 IST" duration-ms="1004" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->
       </class> <!-- com.test.SubmitOrderTest_Browser -->
     </test> <!-- SubmitOrderTest -->
-    <test started-at="2025-03-11T13:29:17 IST" name="ErrorValidationTest" finished-at="2025-03-11T13:29:44 IST" duration-ms="27172">
+    <test started-at="2025-03-19T06:28:29 IST" name="ErrorValidationTest" finished-at="2025-03-19T06:29:38 IST" duration-ms="68957">
       <class name="com.test.Error_Validation_Test">
-        <test-method is-config="true" signature="launchApplication()[pri:0, instance:com.test.Error_Validation_Test@503f91c3]" started-at="2025-03-11T13:29:17 IST" name="launchApplication" finished-at="2025-03-11T13:29:22 IST" duration-ms="5514" status="PASS">
+        <test-method is-config="true" signature="launchApplication()[pri:0, instance:com.test.Error_Validation_Test@2a4fb17b]" started-at="2025-03-19T06:28:29 IST" name="launchApplication" finished-at="2025-03-19T06:28:59 IST" duration-ms="30300" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- launchApplication -->
-        <test-method signature="login_error_Validation()[pri:0, instance:com.test.Error_Validation_Test@503f91c3]" started-at="2025-03-11T13:29:22 IST" name="login_error_Validation" finished-at="2025-03-11T13:29:24 IST" duration-ms="1237" status="FAIL">
+        <test-method signature="login_error_Validation()[pri:0, instance:com.test.Error_Validation_Test@2a4fb17b]" started-at="2025-03-19T06:28:59 IST" name="login_error_Validation" finished-at="2025-03-19T06:29:01 IST" duration-ms="1578" status="FAIL">
           <exception class="java.lang.AssertionError">
             <message>
               <![CDATA[expected [Incorrect or password.] but found [Incorrect email or password.]]]>
@@ -128,41 +59,31 @@ at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
 at org.testng.TestRunner.privateRun(TestRunner.java:829)
 at org.testng.TestRunner.run(TestRunner.java:602)
 at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:431)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:391)
-at org.testng.SuiteRunner.run(SuiteRunner.java:330)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
-at org.testng.TestNG.runSuites(TestNG.java:1099)
-at org.testng.TestNG.run(TestNG.java:1067)
-at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:308)
-at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:71)
-at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:113)
-at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
-at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
-at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
-at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:475)
+at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:58)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+at java.base/java.lang.Thread.run(Thread.java:1583)
 ]]>
             </full-stacktrace>
           </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- login_error_Validation -->
-        <test-method is-config="true" signature="teardown()[pri:0, instance:com.test.Error_Validation_Test@503f91c3]" started-at="2025-03-11T13:29:24 IST" name="teardown" finished-at="2025-03-11T13:29:24 IST" duration-ms="133" status="PASS">
+        <test-method is-config="true" signature="teardown()[pri:0, instance:com.test.Error_Validation_Test@2a4fb17b]" started-at="2025-03-19T06:29:01 IST" name="teardown" finished-at="2025-03-19T06:29:02 IST" duration-ms="920" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->
-        <test-method is-config="true" signature="launchApplication()[pri:0, instance:com.test.Error_Validation_Test@503f91c3]" started-at="2025-03-11T13:29:24 IST" name="launchApplication" finished-at="2025-03-11T13:29:36 IST" duration-ms="11966" status="PASS">
+        <test-method is-config="true" signature="launchApplication()[pri:0, instance:com.test.Error_Validation_Test@2a4fb17b]" started-at="2025-03-19T06:29:02 IST" name="launchApplication" finished-at="2025-03-19T06:29:30 IST" duration-ms="28105" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- launchApplication -->
-        <test-method signature="product_error_Validation()[pri:0, instance:com.test.Error_Validation_Test@503f91c3]" started-at="2025-03-11T13:29:36 IST" name="product_error_Validation" finished-at="2025-03-11T13:29:44 IST" duration-ms="7972" status="PASS">
+        <test-method signature="product_error_Validation()[pri:0, instance:com.test.Error_Validation_Test@2a4fb17b]" started-at="2025-03-19T06:29:30 IST" name="product_error_Validation" finished-at="2025-03-19T06:29:37 IST" duration-ms="6983" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- product_error_Validation -->
-        <test-method is-config="true" signature="teardown()[pri:0, instance:com.test.Error_Validation_Test@503f91c3]" started-at="2025-03-11T13:29:44 IST" name="teardown" finished-at="2025-03-11T13:29:44 IST" duration-ms="108" status="PASS">
+        <test-method is-config="true" signature="teardown()[pri:0, instance:com.test.Error_Validation_Test@2a4fb17b]" started-at="2025-03-19T06:29:37 IST" name="teardown" finished-at="2025-03-19T06:29:38 IST" duration-ms="1033" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->

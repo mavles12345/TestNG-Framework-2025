@@ -2,32 +2,36 @@
 <testng-results ignored="0" total="3" passed="2" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-03-07T00:11:58 IST" name="SubmitOrderSuite" finished-at="2025-03-07T00:12:38 IST" duration-ms="39632">
+  <suite started-at="2025-03-19T06:14:44 IST" name="SubmitOrderSuite" finished-at="2025-03-19T06:15:29 IST" duration-ms="44514">
     <groups>
+      <group name="ErrorHandling">
+        <method signature="Error_Validation_Test.login_error_Validation()[pri:0, instance:com.test.Error_Validation_Test@5524cca1]" name="login_error_Validation" class="com.test.Error_Validation_Test"/>
+        <method signature="Error_Validation_Test.product_error_Validation()[pri:0, instance:com.test.Error_Validation_Test@5524cca1]" name="product_error_Validation" class="com.test.Error_Validation_Test"/>
+      </group> <!-- ErrorHandling -->
     </groups>
-    <test started-at="2025-03-07T00:11:58 IST" name="SubmitOrderTest" finished-at="2025-03-07T00:12:17 IST" duration-ms="18243">
+    <test started-at="2025-03-19T06:14:44 IST" name="SubmitOrderTest" finished-at="2025-03-19T06:14:59 IST" duration-ms="14086">
       <class name="com.test.SubmitOrderTest_Browser">
-        <test-method is-config="true" signature="launchApplication()[pri:0, instance:com.test.SubmitOrderTest_Browser@b7c4869]" started-at="2025-03-07T00:11:58 IST" name="launchApplication" finished-at="2025-03-07T00:12:08 IST" duration-ms="9800" status="PASS">
+        <test-method is-config="true" signature="launchApplication()[pri:0, instance:com.test.SubmitOrderTest_Browser@1a6d8329]" started-at="2025-03-19T06:14:44 IST" name="launchApplication" finished-at="2025-03-19T06:14:51 IST" duration-ms="6343" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- launchApplication -->
-        <test-method signature="submitOrderTest()[pri:0, instance:com.test.SubmitOrderTest_Browser@b7c4869]" started-at="2025-03-07T00:12:08 IST" name="submitOrderTest" finished-at="2025-03-07T00:12:16 IST" duration-ms="8262" status="PASS">
+        <test-method signature="submitOrderTest()[pri:0, instance:com.test.SubmitOrderTest_Browser@1a6d8329]" started-at="2025-03-19T06:14:51 IST" name="submitOrderTest" finished-at="2025-03-19T06:14:58 IST" duration-ms="7630" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- submitOrderTest -->
-        <test-method is-config="true" signature="teardown()[pri:0, instance:com.test.SubmitOrderTest_Browser@b7c4869]" started-at="2025-03-07T00:12:16 IST" name="teardown" finished-at="2025-03-07T00:12:17 IST" duration-ms="139" status="PASS">
+        <test-method is-config="true" signature="teardown()[pri:0, instance:com.test.SubmitOrderTest_Browser@1a6d8329]" started-at="2025-03-19T06:14:58 IST" name="teardown" finished-at="2025-03-19T06:14:59 IST" duration-ms="83" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->
       </class> <!-- com.test.SubmitOrderTest_Browser -->
     </test> <!-- SubmitOrderTest -->
-    <test started-at="2025-03-07T00:12:17 IST" name="ErrorValidationTest" finished-at="2025-03-07T00:12:38 IST" duration-ms="20904">
+    <test started-at="2025-03-19T06:14:44 IST" name="ErrorValidationTest" finished-at="2025-03-19T06:15:29 IST" duration-ms="44514">
       <class name="com.test.Error_Validation_Test">
-        <test-method is-config="true" signature="launchApplication()[pri:0, instance:com.test.Error_Validation_Test@4748a0f9]" started-at="2025-03-07T00:12:17 IST" name="launchApplication" finished-at="2025-03-07T00:12:23 IST" duration-ms="5808" status="PASS">
+        <test-method is-config="true" signature="launchApplication()[pri:0, instance:com.test.Error_Validation_Test@5524cca1]" started-at="2025-03-19T06:14:44 IST" name="launchApplication" finished-at="2025-03-19T06:14:53 IST" duration-ms="8998" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- launchApplication -->
-        <test-method signature="login_error_Validation()[pri:0, instance:com.test.Error_Validation_Test@4748a0f9]" started-at="2025-03-07T00:12:23 IST" name="login_error_Validation" finished-at="2025-03-07T00:12:24 IST" duration-ms="1136" status="FAIL">
+        <test-method signature="login_error_Validation()[pri:0, instance:com.test.Error_Validation_Test@5524cca1]" started-at="2025-03-19T06:14:53 IST" name="login_error_Validation" finished-at="2025-03-19T06:14:55 IST" duration-ms="1850" status="FAIL">
           <exception class="java.lang.AssertionError">
             <message>
               <![CDATA[expected [Incorrect or password.] but found [Incorrect email or password.]]]>
@@ -57,37 +61,31 @@ at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
 at org.testng.TestRunner.privateRun(TestRunner.java:829)
 at org.testng.TestRunner.run(TestRunner.java:602)
 at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:431)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:391)
-at org.testng.SuiteRunner.run(SuiteRunner.java:330)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
-at org.testng.TestNG.runSuites(TestNG.java:1099)
-at org.testng.TestNG.run(TestNG.java:1067)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:475)
+at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:58)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
+at java.base/java.lang.Thread.run(Thread.java:832)
 ]]>
             </full-stacktrace>
           </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- login_error_Validation -->
-        <test-method is-config="true" signature="teardown()[pri:0, instance:com.test.Error_Validation_Test@4748a0f9]" started-at="2025-03-07T00:12:24 IST" name="teardown" finished-at="2025-03-07T00:12:24 IST" duration-ms="98" status="PASS">
+        <test-method is-config="true" signature="teardown()[pri:0, instance:com.test.Error_Validation_Test@5524cca1]" started-at="2025-03-19T06:14:55 IST" name="teardown" finished-at="2025-03-19T06:14:55 IST" duration-ms="103" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->
-        <test-method is-config="true" signature="launchApplication()[pri:0, instance:com.test.Error_Validation_Test@4748a0f9]" started-at="2025-03-07T00:12:24 IST" name="launchApplication" finished-at="2025-03-07T00:12:31 IST" duration-ms="6368" status="PASS">
+        <test-method is-config="true" signature="launchApplication()[pri:0, instance:com.test.Error_Validation_Test@5524cca1]" started-at="2025-03-19T06:14:55 IST" name="launchApplication" finished-at="2025-03-19T06:15:22 IST" duration-ms="26374" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- launchApplication -->
-        <test-method signature="product_error_Validation()[pri:0, instance:com.test.Error_Validation_Test@4748a0f9]" started-at="2025-03-07T00:12:31 IST" name="product_error_Validation" finished-at="2025-03-07T00:12:38 IST" duration-ms="7045" status="PASS">
+        <test-method signature="product_error_Validation()[pri:0, instance:com.test.Error_Validation_Test@5524cca1]" started-at="2025-03-19T06:15:22 IST" name="product_error_Validation" finished-at="2025-03-19T06:15:29 IST" duration-ms="7095" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- product_error_Validation -->
-        <test-method is-config="true" signature="teardown()[pri:0, instance:com.test.Error_Validation_Test@4748a0f9]" started-at="2025-03-07T00:12:38 IST" name="teardown" finished-at="2025-03-07T00:12:38 IST" duration-ms="69" status="PASS">
+        <test-method is-config="true" signature="teardown()[pri:0, instance:com.test.Error_Validation_Test@5524cca1]" started-at="2025-03-19T06:15:29 IST" name="teardown" finished-at="2025-03-19T06:15:29 IST" duration-ms="63" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->

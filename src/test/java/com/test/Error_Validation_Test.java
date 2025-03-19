@@ -16,8 +16,8 @@ import com.testcomponents.BaseTest;
 
 public class Error_Validation_Test extends BaseTest {
 
-	// @Test (groups= {"ErrorHandling"})
-	@Test
+	@Test (groups= {"ErrorHandling"})
+	//@Test
 	public void login_error_Validation() throws IOException {
 
 		// LandingPage landingpage = launchApplication();
@@ -28,7 +28,8 @@ public class Error_Validation_Test extends BaseTest {
 	}
 
 	//@Test(retryAnalyzer = (Retry.class)
-	@Test
+	//@Test
+	@Test (groups= {"ErrorHandling"})
 	public void product_error_Validation() {
 
 		String productName = "ZARA COAT 3";
